@@ -17,7 +17,6 @@ public class PictureTester
     beach.zeroBlue();
     beach.explore();
   }
-  
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
@@ -51,6 +50,13 @@ public class PictureTester
     swan.edgeDetection(10);
     swan.explore();
   }
+  public static void testRandomColor()
+  {
+	  Picture randomColor = new Picture("caterpillar.jpg");
+	  randomColor.explore();
+	  randomColor.randomColor();
+	  randomColor.explore();
+  }
   
   /** Main method for testing.  Every class can have a main
     * method in Java */
@@ -67,6 +73,7 @@ public class PictureTester
     //testGrayscale();
     //testFixUnderwater();
     testMirrorVertical();
+    testRandomColor();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
